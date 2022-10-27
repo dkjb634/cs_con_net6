@@ -17,6 +17,6 @@ public class Processor
 
     public static void HelperFunction(string handler)
     {
-        Console.WriteLine(handler);
+        Console.WriteLine("Helper function: "+ handler);
     }
 }
