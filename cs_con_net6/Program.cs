@@ -5,5 +5,5 @@ using cs_con_net6;
 Console.WriteLine("Hello, World! ");
 
 Processor.CoreFuntionality();
-
+Processor.CoreFuntionality();
 Processor.CoreFuntionality();
