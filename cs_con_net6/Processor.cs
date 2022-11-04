@@ -12,7 +12,7 @@ public class Processor
             CoreFuntionality();
         }
 
-        string bye = "GoodBye";
+        string bye = "GoodBye";//
         HelperFunction(bye);
     }
 
