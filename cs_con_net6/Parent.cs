@@ -4,7 +4,7 @@ public class Parent
 {
     protected static bool Equal(Parent a, int b)
     {
-        return a.a == b;//
+        return a.a == b;//sss
     }
     protected bool Equals(Parent other)
     {
