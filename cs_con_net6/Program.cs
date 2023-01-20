@@ -17,7 +17,7 @@ ClassB objclassB = new ClassB(); //classB{}
 ClassA target = new ClassA();
 
 var stringBuilder = new StringBuilder();
-
+//C2
 Person john = new Person
 {
     Id = 1234,
