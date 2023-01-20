@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Text;
 using cs_con_net6;
 using Tutorial;
 using Google.Protobuf;
@@ -11,15 +12,12 @@ using Google.Protobuf;
 
 #endregion
 
-List<float> lst = new List<float>();
-lst.Add(4.5f);
-{
+ClassA objClassA = new ClassA(); //classA{}
+ClassB objclassB = new ClassB(); //classB{}
+ClassA target = new ClassA();
 
-    
-    
-    Console.WriteLine("Hello, World! ");    
-    
-}
+var stringBuilder = new StringBuilder();
+
 Person john = new Person
 {
     Id = 1234,

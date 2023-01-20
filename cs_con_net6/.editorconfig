@@ -1,0 +1,411 @@
+# NOTE: Requires **VS2019 16.3** or later
+
+# Microsoft Managed Recommended Rules
+# Description: These rules focus on the most critical problems in your code, including potential security holes, application crashes, and other important logic and design errors. It is recommended to include this rule set in any custom rule set you create for your projects.
+
+# Code files
+[*.{cs,vb}]
+
+
+dotnet_diagnostic.CA1001.severity = none
+
+dotnet_diagnostic.CA1009.severity = none
+
+dotnet_diagnostic.CA1016.severity = none
+
+# generic catching
+dotnet_diagnostic.CA1031.severity = none
+
+dotnet_diagnostic.CA1033.severity = none
+
+# nested types
+dotnet_diagnostic.CA1034.severity = none
+
+dotnet_diagnostic.CA1049.severity = none
+
+dotnet_diagnostic.CA1051.severity = none
+
+dotnet_diagnostic.CA1060.severity = none
+
+dotnet_diagnostic.CA1061.severity = none
+
+# literally would need everything to be checked against null
+dotnet_diagnostic.CA1062.severity = none
+
+dotnet_diagnostic.CA1063.severity = none
+
+dotnet_diagnostic.CA1065.severity = none
+
+dotnet_diagnostic.CA1301.severity = none
+
+# resource table usage.
+# probably should use once we implement localization
+dotnet_diagnostic.CA1303.severity = none
+
+# tells to use ToUpperInvariant instead of ToLower
+dotnet_diagnostic.CA1308.severity = none
+
+dotnet_diagnostic.CA1400.severity = none
+
+dotnet_diagnostic.CA1401.severity = none
+
+dotnet_diagnostic.CA1403.severity = none
+
+dotnet_diagnostic.CA1404.severity = none
+
+dotnet_diagnostic.CA1405.severity = none
+
+dotnet_diagnostic.CA1410.severity = none
+
+dotnet_diagnostic.CA1415.severity = none
+
+# underscores
+dotnet_diagnostic.CA1707.severity = none
+
+# Namespace class name conflicts
+dotnet_diagnostic.CA1724.severity = none
+
+dotnet_diagnostic.CA1801.severity = none
+
+dotnet_diagnostic.CA1805.severity = none
+
+# Unused internal class
+dotnet_diagnostic.CA1812.severity = none
+
+# don't recommend jagged arrays
+dotnet_diagnostic.CA1814.severity = none
+
+dotnet_diagnostic.CA1821.severity = none
+
+# don't suggest everything including godot callbacks to be static
+dotnet_diagnostic.CA1822.severity = none
+
+# allow unused fields
+dotnet_diagnostic.CA1823.severity = none
+
+dotnet_diagnostic.CA1900.severity = none
+
+dotnet_diagnostic.CA1901.severity = none
+
+# literally everything should be disposed...
+dotnet_diagnostic.CA2000.severity = none
+
+dotnet_diagnostic.CA2002.severity = none
+
+dotnet_diagnostic.CA2100.severity = none
+
+dotnet_diagnostic.CA2101.severity = none
+
+dotnet_diagnostic.CA2108.severity = none
+
+dotnet_diagnostic.CA2111.severity = none
+
+dotnet_diagnostic.CA2112.severity = none
+
+dotnet_diagnostic.CA2114.severity = none
+
+dotnet_diagnostic.CA2116.severity = none
+
+dotnet_diagnostic.CA2117.severity = none
+
+dotnet_diagnostic.CA2122.severity = none
+
+dotnet_diagnostic.CA2123.severity = none
+
+dotnet_diagnostic.CA2124.severity = none
+
+dotnet_diagnostic.CA2126.severity = none
+
+dotnet_diagnostic.CA2131.severity = none
+
+dotnet_diagnostic.CA2132.severity = none
+
+dotnet_diagnostic.CA2133.severity = none
+
+dotnet_diagnostic.CA2134.severity = none
+
+dotnet_diagnostic.CA2137.severity = none
+
+dotnet_diagnostic.CA2138.severity = none
+
+dotnet_diagnostic.CA2140.severity = none
+
+dotnet_diagnostic.CA2141.severity = none
+
+dotnet_diagnostic.CA2146.severity = none
+
+dotnet_diagnostic.CA2147.severity = none
+
+dotnet_diagnostic.CA2149.severity = none
+
+dotnet_diagnostic.CA2200.severity = none
+
+dotnet_diagnostic.CA2202.severity = none
+
+dotnet_diagnostic.CA2207.severity = none
+
+dotnet_diagnostic.CA2212.severity = none
+
+dotnet_diagnostic.CA2213.severity = none
+
+dotnet_diagnostic.CA2214.severity = none
+
+dotnet_diagnostic.CA2216.severity = none
+
+dotnet_diagnostic.CA2220.severity = none
+
+# alternative names for operators
+dotnet_diagnostic.CA2225.severity = none
+
+# allow public sets
+dotnet_diagnostic.CA2227.severity = none
+
+dotnet_diagnostic.CA2229.severity = none
+
+dotnet_diagnostic.CA2231.severity = none
+
+dotnet_diagnostic.CA2232.severity = none
+
+dotnet_diagnostic.CA2235.severity = none
+
+dotnet_diagnostic.CA2236.severity = none
+
+dotnet_diagnostic.CA2237.severity = none
+
+dotnet_diagnostic.CA2238.severity = none
+
+dotnet_diagnostic.CA2240.severity = none
+
+dotnet_diagnostic.CA2241.severity = none
+
+dotnet_diagnostic.CA2242.severity = none
+
+# XML comments
+dotnet_diagnostic.SA0001.severity = none
+
+dotnet_diagnostic.SA1001.severity = none
+
+dotnet_diagnostic.SA1002.severity = none
+
+dotnet_diagnostic.SA1021.severity = none
+
+# No trailing whitespace
+dotnet_diagnostic.SA1028.severity = none
+
+# DoNotPrefixCallsWithBaseUnlessLocalImplementationExists
+dotnet_diagnostic.SA1100.severity = none
+
+# Prefix local calls with this
+dotnet_diagnostic.SA1101.severity = none
+
+# CodeMustNotContainEmptyStatements
+dotnet_diagnostic.SA1106.severity = none
+
+# Single statement on line
+dotnet_diagnostic.SA1107.severity = none
+
+# Block statements should not contain embedded comments
+dotnet_diagnostic.SA1108.severity = none
+
+# Opening parenthesis on the declaration line
+dotnet_diagnostic.SA1110.severity = none
+
+# Closing parenthesis on the same line as last argument
+dotnet_diagnostic.SA1111.severity = none
+
+# When empty closing parenthesis on the same line
+dotnet_diagnostic.SA1112.severity = none
+
+# Comma on same line as previous parameter
+dotnet_diagnostic.SA1113.severity = none
+
+# ParameterListMustFollowDeclaration
+dotnet_diagnostic.SA1114.severity = none
+
+# ParameterMustFollowComma
+dotnet_diagnostic.SA1115.severity = none
+
+# Split parameters should start on line after declaration
+dotnet_diagnostic.SA1116.severity = none
+
+# Parameters should be on same line or separate lines
+dotnet_diagnostic.SA1117.severity = none
+
+# Parameter should not span multiple lines
+dotnet_diagnostic.SA1118.severity = none
+
+# Empty comment
+dotnet_diagnostic.SA1120.severity = none
+
+dotnet_diagnostic.SA1121.severity = none
+
+# Use string.Empty for empty strings
+dotnet_diagnostic.SA1122.severity = none
+
+# No regions in elements
+dotnet_diagnostic.SA1123.severity = none
+
+# Generic type constraints should be on their own line
+dotnet_diagnostic.SA1127.severity = none
+
+# Put constructor initializers on their own line
+dotnet_diagnostic.SA1128.severity = none
+
+# Wrong default syntax
+dotnet_diagnostic.SA1129.severity = none
+
+# UseLambdaSyntax
+dotnet_diagnostic.SA1130.severity = none
+
+# UseReadableConditions
+dotnet_diagnostic.SA1131.severity = none
+
+# Do not combine fields
+dotnet_diagnostic.SA1132.severity = none
+
+# Do not combine attributes
+dotnet_diagnostic.SA1133.severity = none
+
+# attributes on separate lines
+dotnet_diagnostic.SA1134.severity = none
+
+# qualify using directives
+dotnet_diagnostic.SA1135.severity = error
+
+# no multiple enum values on the same line
+dotnet_diagnostic.SA1136.severity = none
+
+# Elements should have the same indentation
+dotnet_diagnostic.SA1137.severity = none
+
+# Use tuple syntax
+dotnet_diagnostic.SA1141.severity = none
+
+# Refer to tuple elements by name
+dotnet_diagnostic.SA1142.severity = none
+
+# Usings should be in a namespace
+dotnet_diagnostic.SA1200.severity = none
+
+# Elements should appear in the correct order
+dotnet_diagnostic.SA1201.severity = none
+
+dotnet_diagnostic.SA1203.severity = none
+
+# Readonly fields should appear before non-readonly fields
+dotnet_diagnostic.SA1214.severity = none
+
+# Field names should not begin with underscore
+dotnet_diagnostic.SA1309.severity = none
+
+# Field names should not contain an underscore
+dotnet_diagnostic.SA1310.severity = none
+
+# StaticReadonlyFieldsMustBeginWithUpperCaseLetter
+dotnet_diagnostic.SA1311.severity = none
+
+# variable needs to begin with lowercase
+dotnet_diagnostic.SA1312.severity = none
+
+# parameter needs to begin with lowercase
+dotnet_diagnostic.SA1313.severity = none
+
+# Tuple value name casing
+dotnet_diagnostic.SA1316.severity = none
+
+# Fields should be private
+dotnet_diagnostic.SA1401.severity = none
+
+# File should contain one type
+dotnet_diagnostic.SA1402.severity = none
+
+# Single namespace
+dotnet_diagnostic.SA1403.severity = none
+
+# Arithmetic expressions should declare precedence
+dotnet_diagnostic.SA1407.severity = none
+
+# Trailing comma
+dotnet_diagnostic.SA1413.severity = none
+
+# TupleTypesInSignaturesShouldHaveElementNames
+dotnet_diagnostic.SA1414.severity = none
+
+# Statement should not be on a single line
+dotnet_diagnostic.SA1501.severity = none
+
+# Element should not be on a single line
+dotnet_diagnostic.SA1502.severity = none
+
+# BracesMustNotBeOmitted
+dotnet_diagnostic.SA1503.severity = none
+
+# All accessors must be single line or multi line
+dotnet_diagnostic.SA1504.severity = none
+
+dotnet_diagnostic.SA1507.severity = none
+
+# Single-line comments should not be followed by blank line
+dotnet_diagnostic.SA1512.severity = none
+
+dotnet_diagnostic.SA1513.severity = none
+
+# Single-line comment should be preceded by blank line
+dotnet_diagnostic.SA1515.severity = none
+
+# Elements should be separated by blank line
+dotnet_diagnostic.SA1516.severity = none
+
+# Consistently use braces
+dotnet_diagnostic.SA1520.severity = none
+
+# Elements should be documented
+dotnet_diagnostic.SA1600.severity = none
+
+# Partial elements should be documented
+dotnet_diagnostic.SA1601.severity = none
+
+# Enumeration items should be documented type
+dotnet_diagnostic.SA1602.severity = none
+
+# Element documentation should have summary
+dotnet_diagnostic.SA1604.severity = none
+
+dotnet_diagnostic.SA1611.severity = none
+
+# ElementParameterDocumentationMustMatchElementParameters
+dotnet_diagnostic.SA1612.severity = none
+
+# ElementParameterDocumentationMustDeclareParameterName
+dotnet_diagnostic.SA1613.severity = none
+
+# ElementParameterDocumentationMustHaveText
+dotnet_diagnostic.SA1614.severity = none
+
+# VoidReturnValueMustNotBeDocumented
+dotnet_diagnostic.SA1617.severity = none
+
+# GenericTypeParameterDocumentationMustHaveText
+dotnet_diagnostic.SA1622.severity = none
+
+# ElementDocumentationMustNotBeCopiedAndPasted
+dotnet_diagnostic.SA1625.severity = none
+
+# SingleLineCommentsMustNotUseDocumentationStyleSlashes
+dotnet_diagnostic.SA1626.severity = none
+
+dotnet_diagnostic.SA1629.severity = none
+
+# File should have header
+dotnet_diagnostic.SA1633.severity = none
+
+dotnet_diagnostic.SA1642.severity = none
+
+# InheritDocMustBeUsedWithInheritingClass
+dotnet_diagnostic.SA1648.severity = none
+
+# FileNameMustMatchTypeName
+dotnet_diagnostic.SA1649.severity = none
+
+# Don't prefix things with this
+dotnet_diagnostic.SX1101.severity = none
