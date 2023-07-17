@@ -9,6 +9,7 @@ public class Parent
     protected bool Equals(Parent other)
     {
         return a == other.a && b == other.b;
+        //Local Change
     }
 
     public override bool Equals(object? obj)
