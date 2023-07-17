@@ -6,5 +6,7 @@ class ParentImpl : Parent
     
     public static bool operator ==(ParentImpl left, int right) => left.b == right;
     public static bool operator !=(ParentImpl left, int right) => left.b != right;
+    
+    //
 
 }
