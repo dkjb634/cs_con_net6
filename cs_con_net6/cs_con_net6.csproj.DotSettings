@@ -1,4 +1,0 @@
-﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/CodeEditing/Localization/Localizable/@EntryValue">Yes</s:String>
-<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/UserRules/=8d680888_002D0ac8_002D4120_002Da24e_002D02defe79506f/@EntryIndexedValue">&lt;Policy&gt;&lt;Descriptor Staticness="Static, Instance" AccessRightKinds="Private, Protected, ProtectedInternal, Internal, Public, PrivateProtected" Description="AsyncMethods"&gt;&lt;ElementKinds&gt;&lt;Kind Name="ASYNC_METHOD" /&gt;&lt;/ElementKinds&gt;&lt;/Descriptor&gt;&lt;Policy Inspect="True" Prefix="Async" Suffix="" Style="AaBb" /&gt;&lt;/Policy&gt;</s:String>
-    </wpf:ResourceDictionary>

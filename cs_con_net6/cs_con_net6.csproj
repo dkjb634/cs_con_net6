@@ -2,10 +2,11 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PreferredUILang>ru-RU</PreferredUILang>
+        <LangVersion>11</LangVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -19,6 +20,23 @@
     <ItemGroup>
       <PackageReference Include="Google.Protobuf" Version="3.21.9" />
       <PackageReference Include="Google.Protobuf.Tools" Version="3.21.9" />
+      <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="5.0.4">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Serilog" Version="2.11.0" />
+    </ItemGroup>
+
+    <Target Name="MyTarget" AfterTargets="ATargetThatDoesNotExistAndWillNeverBeExecuted">
+        <PropertyGroup>
+            <MyChildDirectory>NotEmpty</MyChildDirectory>
+        </PropertyGroup>
+        <ItemGroup>
+            <MyParentDirectory Include="$([System.IO.Directory]::GetParent($(MyChildDirectory)))" />
+        </ItemGroup>
+    </Target>
+    
 </Project>

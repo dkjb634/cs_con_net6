@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System.Text;
+using System;
 using cs_con_net6;
 using Tutorial;
 using Google.Protobuf;
@@ -12,10 +13,16 @@ using Google.Protobuf;
 
 #endregion
 
+
+
+
 ClassA objClassA = new ClassA(); //classA{}
 ClassB objclassB = new ClassB(); //classB{}
 ClassA target = new ClassA();
 
+System.Console.WriteLine("Hello, World!");
+
+Console.ReadLine();
 var stringBuilder = new StringBuilder();
 //C2
 Person john = new Person
@@ -30,5 +37,7 @@ using (var output = File.Create("john.dat"))
 {
     john.WriteTo(output);
 }
+
+UInt128 tes = new UInt128(122, 233);
 
 //C3
