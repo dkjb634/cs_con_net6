@@ -2,4 +2,5 @@
 
 using cs_con_net6;
 
+string obj = "QQ";
 Console.WriteLine("Hello, World! ");
