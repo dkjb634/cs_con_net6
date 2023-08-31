@@ -4,17 +4,14 @@ namespace cs_con_net6;
 
 public class BinaryParser
 {
+    private SequencePoint header;
+
     public FieldKing ParseField(ReadOnlySpan<char> header)
     {
-        if (header.SequenceEqual("<==HEADER==>"))
-        {
-            return new FieldKing();
-        }
+        if (header.SequenceEqual("<==HEADER==>")) return new FieldKing();
 
         return new FieldKing();
     }
-
-    private SequencePoint header;
 }
 
 public class FieldKing

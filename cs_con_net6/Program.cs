@@ -1,6 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using cs_con_net6;
+using System.Collections;
+using MyConnector;
 
-string obj = "QQ";
+var obj = "QQ";
 Console.WriteLine("Hello, World! ");
+
+var connection = Connector.getConnection();
+var ConDetails = connection.getConnectionDetails();
+var con = Connector.getConnection().getConnectionDetails();
+Console.WriteLine(con);
+
