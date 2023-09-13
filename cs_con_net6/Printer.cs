@@ -4,6 +4,6 @@ public class Printer : IPrintable
 {
     public void Print()
     {
-        throw new NotImplementedException();
+        throw new NotImplementedException();//dsa
     }
 }

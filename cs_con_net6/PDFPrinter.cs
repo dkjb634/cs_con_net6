@@ -4,6 +4,7 @@ public class PDFPrinter : IPrintable
 {
     public void Print()
     {
-        throw new NotImplementedException();
+        int g = 3;
+        Console.WriteLine(2);
     }
 }

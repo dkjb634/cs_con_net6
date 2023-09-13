@@ -1,0 +1,22 @@
+@page
+@model WebApplication3.RazorPageItIs
+
+@{
+    Layout = null;
+
+    IConfiguration CONFIGURAION = new ConfigurationManager();
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="~/css/site.css?v=@CONFIGURAION["AppSettings: First"]" asp-append-version="true"></script>
+</head>
+<body>
+<div>
+    
+</div>
+</body>
+</html>

@@ -9,7 +9,7 @@ namespace ConsoleApp1
     public class C
     {
         public void Usage([CanBeNull] IList list)
-        {//TODO: first
+        {//TODO: first last
             if (list.IsNullOrZero())
             {
                 return;
