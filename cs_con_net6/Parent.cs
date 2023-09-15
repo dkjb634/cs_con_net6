@@ -8,6 +8,7 @@ public class Parent
     
     protected static bool Equal(Parent a, int b)
     {
+	    b+=10;
         return a.a == b; //sss
     }
 
