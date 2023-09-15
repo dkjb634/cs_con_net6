@@ -9,10 +9,10 @@ Console.WriteLine("Hello, World! ");
 
 PDFPrinter orinter = new PDFPrinter();
 orinter.Print();
-
+String str = "initial";
 var connection = Connector.getConnection();
 var ConDetails = connection.getConnectionDetails();
 var con = Connector.getConnection().getConnectionDetails();
-String str = "QWEWQE";
+str = "changed";
 Console.WriteLine(con + str.Count());
 
